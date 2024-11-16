@@ -17,14 +17,50 @@ To run **Jumpy Dino**, you need to have the following installed:
 - Python 3.x (preferably the latest version)
 - Pygame library
 
-### **Installation Steps**
+## **Running the Game**
 
-1. **Install Python:**
-   - Download and install Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+To run the **Jumpy Dino** game, follow these steps:
 
-2. **Install Pygame:**
-   - Open your terminal (Command Prompt, PowerShell, or terminal in your code editor).
-   - Run the following command to install Pygame:
+1. **Ensure Python is installed:**
 
-   ```bash
-   pip install pygame
+   - Download and install Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/).
+   - After installation, you can check Python's version by running the following command in your terminal:
+
+     ```bash
+     python --version
+     ```
+
+2. **Install Pygame library:**
+
+   - The game requires the Pygame library. To install it, open your terminal or command prompt and run:
+
+     ```bash
+     pip install pygame
+     ```
+
+3. **Download the `game.py` file:**
+
+   - Download or copy the `game.py` file from the repository (or wherever it's stored) to your local machine.
+
+4. **Navigate to the directory where `game.py` is located:**
+
+   - Open your terminal (Command Prompt or PowerShell) and use the `cd` command to navigate to the folder where the `game.py` file is saved.
+
+     Example:
+
+     ```bash
+     cd C:\Users\YourUsername\path\to\game\directory
+     ```
+
+5. **Run the game:**
+
+   - Once you're in the directory where the `game.py` file is saved, run the following command to start the game:
+
+     ```bash
+     python game.py
+     ```
+
+6. **Play the game:**
+
+   - After running the command, the game window will open, and you can start playing.
+   - Use the **Spacebar** to make the dinosaur jump over obstacles.
