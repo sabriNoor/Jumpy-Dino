@@ -66,6 +66,25 @@ def display_message(text, font_size, color, y_offset=0):
     screen.blit(message, (WIDTH // 2 - message.get_width() // 2, HEIGHT // 2 - message.get_height() // 2 + y_offset))
     pygame.display.update()
 
+# Function to show start screen
+def show_start_screen():
+    screen.fill(WHITE)
+    display_message("Jumpy Dino Game", 48, BLACK, -50)
+    display_message("Press ENTER to Start", 36, BLACK, 50)
+
+    pygame.display.update()
+
+    # Wait for player to press ENTER to start
+    waiting_for_start = True
+    while waiting_for_start:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RETURN:
+                    waiting_for_start = False
+
 # Main function
 def game():
     dinosaur = Dinosaur()
@@ -138,4 +157,5 @@ def game():
                     quit()
 
 if __name__ == "__main__":
-    game()
+    show_start_screen()  # Show the start screen before the game
+    game()  # Start the game after the user presses ENTER
